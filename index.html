@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
+        integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=='
+        crossorigin='anonymous' />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/12bool.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -14,31 +19,40 @@
 
     <div class="container">
 
-        <header class="col-xs-11 flex j-end">
+        <header class="col-xs-11 col-sm-8 flex j-end">
             <span class="btn-upgrade"> Effettua l'upgrade</span>
         </header>
 
 
         <main>
             <div class="row">
-                <nav class="col-xs-1 flex-c j-between">
-                    <div class="content flex-c">
-                        <img src="./img/logo-small.svg" alt="">
-                        <img src="./img/home.svg" alt="">
+                <nav class="col-xs-1 col-sm-4 flex-c j-between ">
+                    <div class="content flex-c a-center">
+                        <div>
+                            <img src="./img/logo.svg" alt="logo-big">
+                        </div>
+                        <img src="./img/logo-small.svg" alt="logo-small">
+                        <div class="home flex j-center a-center ">
+                            <div>
+                                <img src="./img/home.svg" alt="">
+                            </div>
+                            <span>Home</span>
+                            
+                        </div>
                         <img src="./img/search.svg" alt="">
                         <img src="./img/libreria.svg" alt="">
                     </div>
-                    <div class="content flex-c">
+                    <div class="content flex-c a-center">
                         <img src="./img/download.svg" alt="">
                         <img src="./img/profile.svg" alt="">
                     </div>
                 </nav>
 
-                <div class="col-xs-11 pt-70 flex">
+                <div class="col-xs-11 col-sm-8 col-xs-offset-1 col-sm-offset-4 pt-70 flex ">
 
-                    <div class="row  h-20 a-c-start j-center">
+                    <div class="row h-20 a-c-start j-center">
 
-                        <div class="col-xs-12 j-center flex ">
+                        <div class="col-xs-11 col-sm-11 j-center flex ">
                             <span class="p-10">In Evidenza</span>
                             <span class="p-10">Podcast</span>
                             <span class="p-10">Classifiche</span>
@@ -47,25 +61,39 @@
                             <span class="p-10">Scopri</span>
                         </div>
                         
-                        <div class="col-xs-10">
+                        <div class="col-xs-10 col-sm-10">
                             <h1>Recently Played</h1>
                         </div>
-                        <div class="col-xs-10">
+                        <div class="col-xs-10 col-sm-11">
                             <div class="row">
-                                <div class="col-xs-6">
+                                <div class="col-xs-6 col-sm-6">
                                     <div class="card">
                                         <img src="./img/metal_lifting.jpg" alt="">
-
+                                        <div class="description">
+                                            <h3>Heavy Metal</h3>
+                                            <h6>Subtitle</h6>
+                                        </div>
                                     </div>
-
                                 </div>
-                                <div class="col-xs-6">
+                                <div class="col-xs-6 col-sm-6">
                                     <div class="card">
                                         <img src="./img/metal_lifting.jpg" alt="">
-                                    
+                                        <div class="description">
+                                            <h3>Heavy Metal</h3>
+                                            <h6>Subtitle</h6>
+                                        </div>
                                     </div>
-
                                 </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="card">
+                                        <img src="./img/metal_lifting.jpg" alt="">
+                                        <div class="description">
+                                            <h3>Heavy Metal</h3>
+                                            <h6>Subtitle</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 
                                 
                             </div>
@@ -90,8 +118,55 @@
 
         <footer>
             <!-- Player section -->
+            <div class="row a-center j-between">
+                <div class="col-xs-3 col-sm-3">
+                    <div class="img-player flex"><img class="h-30" src="./img/sinister.jpeg" alt="">
+                        <div class=" song-info flex-c">
+                            <h5>Sinister</h5>
+                            <div class="song">Brano</div>
+                            <div class="artist"> Nome</div>
+                        </div>
+                        <div class="favorite flex-c text-white">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-folder"></i>
+                        </div>
+                    </div>
+                </div>
 
-            player qui
+                <div class="col-xs-5 col-sm-5">
+                    <div class="player-top flex a-center j-around">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="far fa-play-circle fa-2x"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                    <div class="progress-bar j-around flex a-center">
+                        <div class="time">0:25</div>
+                        <div class="bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="length">4:30</div>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-sm-4">
+                    <div class="bar-left flex j-between a-center">
+                        <i class="fas fa-list-ul"></i>
+                        <i class="fas fa-tv"></i>
+                        <i class="fas fa-volume-up"></i>
+                        <div class="volume">
+                            <div class="progress"></div>
+                        </div>
+                        
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            
 
         </footer>
     </div>

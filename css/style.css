@@ -6,8 +6,17 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 /** UTILS */
-.row{
+
+.text-white {
+    color: white;
+}
+
+.row {
     height: 100%;
 }
 
@@ -22,25 +31,32 @@
 
 .flex {
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
 }
 
 .pt-70 {
     padding-top: 70px;
 }
 
-
-.h-20{
-   height:100%
+.h-20 {
+    height: 100%
 }
 
-.p-10{
+.h-30 {
+    height: 30px;
+    width: 30px;
+}
+
+.p-10 {
     padding: 10px;
 }
 
-span{
+.pl-50 {
+    padding-left: 50px;
+}
+
+span {
     display: inline-block;
-    height: ;
 }
 
 /** HEADER*/
@@ -64,10 +80,12 @@ header {
 
 /** MAIN - NAV */
 
-
 nav {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 70px);
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 nav .content {
@@ -79,25 +97,101 @@ nav .content {
 nav img {
     height: 30px;
     margin: 5px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 main {
     background-color: #303134;
     color: white;
-    height: calc(100%);
+    height: calc(100% - 50px);
 }
 
 img {
     width: 100%;
 }
+
+.card {
+    border: 5px solid transparent;
+}
+
+.description {
+    text-align: center;
+}
+
 /** FOOTER AKA PLAYER */
 
 footer {
-    height: 50px;
-    background-color: aqua;
+    height: 70px;
+    color: white;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    background-color: black;
+}
+
+.song, .artist {
+    font-size: 0.5em;
+    color: grey;
+}
+
+.song-info {
+    margin-left: 5px;
+}
+
+.favorite {
+    margin-left: 5px;
+}
+
+.bar {
+    height: 5px;
+    border-radius: 10px;
+    width: 60%;
+    background-color: grey;
+    overflow: hidden;
+}
+
+.progress {
+    height: 5px;
+    width: 25%;
+    background-color: white;
+}
+
+.volume {
+    height: 5px;
+    border-radius: 10px;
+    width: 40%;
+    background-color: grey;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.state {
+    width: 20%;
+}
+
+@media screen and (max-width:575px) {
+    [alt="logo-big"]{
+        display: none;
+    }
+    nav span{
+        display:none;
+    }
+    nav{
+        align-items:center;
+    }
+    .home{
+    }
+    
+}
+
+@media screen and (min-width:576px) {
+    nav {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    [alt="logo-small"] {
+        display: none;
+    }
+    
 }

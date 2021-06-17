@@ -420,7 +420,7 @@
 
 @media screen and (min-width: 576px) {
     .container {
-        max-width: 576px;
+        min-width: 576px;
         width: 100%;
     }
     .col-sm-12 {
