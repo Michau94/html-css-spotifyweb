@@ -55,6 +55,10 @@ body {
     padding-left: 50px;
 }
 
+t-r{
+    text-align: left;
+}
+
 span {
     display: inline-block;
 }
@@ -77,6 +81,13 @@ header {
     align-self: center;
     margin-right: 10px;
 }
+
+.btn-play{
+    flex-wrap: nowrap;
+}
+
+.playlist{
+    padding: 10px; }
 
 /** MAIN - NAV */
 
@@ -179,10 +190,10 @@ footer {
     }
     nav{
         align-items:center;
+    }   
+    .playlist-sec{
+        display:none; 
     }
-    .home{
-    }
-    
 }
 
 @media screen and (min-width:576px) {
@@ -193,5 +204,19 @@ footer {
     [alt="logo-small"] {
         display: none;
     }
+    hr{
+        display:none; 
+    }
     
+    nav .content{
+    align-items: flex-start;
+    }
+    nav .content.flex-c{
+    align-items: flex-start;
+    }
+    hr{
+        color:white; 
+        width:50%
+    }
 }
+
