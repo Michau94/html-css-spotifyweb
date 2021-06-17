@@ -6,41 +6,98 @@
     box-sizing: border-box;
 }
 
-/** HEADER*/
-
-header{
-    position: fixed;
-    top:0;
-    right: 0;
-    height: 50px;
-
+/** UTILS */
+.row{
+    height: 100%;
 }
 
-
-/** MAIN - NAV */
-
-main{
-    overflow-y: scroll;
-}
-
-
-
-nav{
-    height: calc(100vh - 50px);
-    background-color: bisque;
-}
-
-
-/** FOOTER AKA PLAYER */
-
-footer{
-    height: 50px;
-    background-color: aqua;
-    position: fixed;
-    bottom:0;
-    left:0; 
+.w-100 {
     width: 100%;
 }
 
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    flex-wrap:wrap ;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
 
 
+.h-20{
+   height:100%
+}
+
+.p-10{
+    padding: 10px;
+}
+
+span{
+    display: inline-block;
+    height: ;
+}
+
+/** HEADER*/
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 70px;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.btn-upgrade {
+    padding: 8px 15px;
+    border: 1px white solid;
+    color: white;
+    border-radius: 15px;
+    align-self: center;
+    margin-right: 10px;
+}
+
+/** MAIN - NAV */
+
+
+nav {
+    height: calc(100vh - 50px);
+    background-color: black;
+}
+
+nav .content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+nav img {
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+main {
+    background-color: #303134;
+    color: white;
+    height: calc(100%);
+}
+
+img {
+    width: 100%;
+}
+/** FOOTER AKA PLAYER */
+
+footer {
+    height: 50px;
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
