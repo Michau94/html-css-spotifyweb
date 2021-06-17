@@ -62,6 +62,9 @@ t-r{
 span {
     display: inline-block;
 }
+.br-50{
+    border-radius:50%;
+}
 
 /** HEADER*/
 
