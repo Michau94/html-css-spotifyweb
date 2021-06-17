@@ -90,6 +90,9 @@ header {
     padding: 10px; }
 
 /** MAIN - NAV */
+[alt="logo-big"]{
+    height: 50px;
+}
 
 nav {
     height: calc(100vh - 70px);
@@ -114,7 +117,8 @@ nav img {
 main {
     background-color: #303134;
     color: white;
-    height: calc(100% - 50px);
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
 }
 
 img {
