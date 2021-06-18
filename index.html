@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel="icon" href="./img/favicon.ico">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
         integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=='
         crossorigin='anonymous' />
@@ -19,7 +20,7 @@
     <div class="container container-fluid">
         <!-- col-xs-11 col-sm-9 col-lg-10 -->
         <header class="col-xs-11 flex j-end">
-            <span class="btn-upgrade"> Effettua l'upgrade</span>
+            <span class="btn-upgrade text-grey"> Effettua l'upgrade</span>
         </header>
 
         <!-- col-sm-3 col-md-3 col-lg-3 col-xl-2 -->
@@ -50,19 +51,19 @@
 
                         <!-- PLAYLIST SECTION -->
 
-                        <div class="playlist-sec flex-c a-start col-sm-10 col-lg-10 col-xl-10 p-10">
-                            <h3>Playlist</h3>
-                            <div class=" playlist-btn list flex text-grey nw col-sm-12 overflow-auto">
-                                <div class="btn-play flex a-center ">
+                        <div class="playlist-sec flex-c a-start col-sm-12 col-md-12 col-lg-12 col-xl-12 p-10 ">
+                            <h3 class="cap">Playlist</h3>
+                            <div class=" playlist-btn list flex-c text-grey nw col-sm-12 text-grey">
+                                <div class="btn-play nw flex a-center p-10 ">
                                     <i class="fas fa-plus-square fa-3x"></i>
                                     <span>Crea playlist</span>
                                 </div>
-                                <div class="playlist">Nome playlist</div>
-                                <div class="playlist">Nome playlist</div>
-                                <div class="playlist">Nome playlist</div>
-                                <div class="playlist">Nome playlist</div>
-                                <div class="playlist">Nome playlist</div>
-                                <div class="playlist">Nome playlist</div>
+                                <div class="playlist p-10">Nome playlist</div>
+                                <div class="playlist p-10">Nome playlist</div>
+                                <div class="playlist p-10">Nome playlist</div>
+                                <div class="playlist p-10">Nome playlist</div>
+                                <div class="playlist p-10">Nome playlist</div>
+                                <div class="playlist p-10">Nome playlist</div>
                             </div>
                         </div>
 
@@ -72,7 +73,7 @@
 
                     <!-- BOTTOM BTN USER + INSTALL -->
 
-                    <div class="content flex-c a-center j-center">
+                    <div class="content flex-c a-center j-center text-grey">
                         <div class="menu flex j-center a-center ">
 
 
@@ -90,11 +91,11 @@
                 </nav>
 
                 <div
-                    class="col-xs-11 col-sm-7 col-md-10 col-md-8 col-lg-8 col-xl-10 col-xs-offset-1 col-sm-offset-4 col-md-offset-3 col-lg-offset-3 col-xl-offset-2 pt-70 flex ">
+                    class="col-xs-11 col-sm-7 col-md-10 col-md-8 col-lg-10 col-xl-10 col-xs-offset-1 col-sm-offset-4 col-md-offset-3 col-lg-offset-2 col-xl-offset-2 pt-70 flex ">
 
                     <div class="row h-20 a-c-start j-center">
 
-                        <div class="col-xs-11 col-sm-11 col-md-12 col-lg-12 col-xl-12 j-center flex top-menu ">
+                        <div class="col-xs-11 col-sm-11 col-md-12 col-lg-12 col-xl-12 j-center flex top-menu text-grey cap ">
                             <div class="flec-c ">
                                 <span class="p-10">In Evidenza</span>
                                 <div class="selected"></div>
@@ -114,10 +115,8 @@
                         <div class="col-xs-10 col-sm-11 col-md-11 col-lg-11 col-xl-12">
                             <div class="row">
                                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 col-xl-">
-                                    <div class="card rel">
+                                    <div class="card">
                                         <img src="./img/metal_lifting.jpg" alt="">
-                                        <div class="btn-hover">
-                                        </div>
                                         <div class="description">
                                             <h3>Heavy Metal</h3>
                                             <h6>Subtitle</h6>
@@ -174,6 +173,7 @@
 
                                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-11 col-xl-11">
                                     <h1 class="sec-title">Creato Per Michau</h1>
+                                    <h6 class="text-grey mtb-15">Più ascolti, più accurati saranno i tuoi suggerimenti.</h6>
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
                                     <div class="card">
@@ -199,6 +199,7 @@
 
                                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-12">
                                     <h1 class="sec-title">Artisti più popolari</h1>
+                                    <h6 class="text-grey mtb-15">Più ascolti, più accurati saranno i tuoi suggerimenti.</h6>
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
                                     <div class="card">
@@ -261,8 +262,9 @@
                     <div class="progress-bar j-around flex a-center">
                         <div class="time">0:25</div>
                         <div class="bar">
-                            <div class="ball"></div>
-                            <div class="progress">
+                            
+                            <div class="progress rel">
+                                <div class="ball"></div>
                             </div>
                             
                         </div>
@@ -277,7 +279,9 @@
                         <i class="fas fa-tv"></i>
                         <i class="fas fa-volume-up"></i>
                         <div class="volume">
-                            <div class="progress"></div>
+                            <div class="progress rel">
+                                <div class="ball"></div>
+                            </div>
                         </div>
 
                     </div>

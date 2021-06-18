@@ -12,8 +12,14 @@ body {
 
 /** UTILS */
 
-.nw {
-    flex-wrap: nowrap;
+.row {
+    height: 100%;
+}
+
+/* TEXT */
+
+.cap {
+    text-transform: uppercase;
 }
 
 .text-white {
@@ -24,13 +30,11 @@ body {
     color: lightgray;
 }
 
-.row {
-    height: 100%;
-}
-
 .w-100 {
     width: 100%;
 }
+
+/* FLEX */
 
 .flex-c {
     display: flex;
@@ -43,8 +47,27 @@ body {
     flex-wrap: wrap;
 }
 
+.nw {
+    flex-wrap: nowrap;
+}
+
+/* PADDING */
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20
+{
+    padding:20px;
+}
+
 .pt-70 {
     padding-top: 70px;
+}
+
+.pl-50 {
+    padding-left: 50px;
 }
 
 .h-20 {
@@ -56,9 +79,7 @@ body {
     width: 30px;
 }
 
-.p-10 {
-    padding: 10px;
-}
+/* MARGIN */
 
 .ml-10 {
     margin-left: 10px;
@@ -68,11 +89,7 @@ body {
     margin: 15px 0;
 }
 
-.pl-50 {
-    padding-left: 50px;
-}
-
-
+/* Generics */
 
 span {
     display: inline-block;
@@ -82,10 +99,12 @@ span {
     border-radius: 50%;
 }
 
-
-
 .rel {
     position: relative;
+}
+
+.overflow-auto {
+    overflow-y: auto;
 }
 
 /** HEADER*/
@@ -102,26 +121,14 @@ header {
 .btn-upgrade {
     padding: 8px 15px;
     border: 1px white solid;
-    color: white;
     border-radius: 15px;
     align-self: center;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
-.btn-play {
-    flex-wrap: nowrap;
-}
-
-.playlist {
-    padding: 10px;
-}
-
-.overflow-auto {
-    overflow-y: auto;
-}
-
-.t-center {
-    text-align: center;
+.btn-upgrade:hover {
+    color: white;
+    transform: scale(1.1);
 }
 
 /** MAIN - NAV */
@@ -151,7 +158,7 @@ nav img {
 }
 
 main {
-    background-color: #303134;
+    background-color: #0C1C24;
     color: white;
     height: calc(100vh - 70px);
     overflow-y: scroll;
@@ -168,8 +175,9 @@ img {
     height: 2px;
     margin: 0 auto;
 }
-.sec-title{
-    margin: 40px 0; 
+
+.sec-title {
+    margin: 40px 0;
 }
 
 .card {
@@ -183,20 +191,6 @@ img {
 .card .description h6 {
     color: #B3B3B3;
     font-weight: 300;
-}
-
-.btn-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, .5);
-}
-
-.btn-hover {
-    opacity: 1;
 }
 
 .description {
@@ -216,7 +210,7 @@ footer {
 }
 
 .song, .artist {
-    font-size: 0.5em;
+    font-size: 0.6em;
     color: grey;
 }
 
@@ -233,35 +227,36 @@ footer {
     border-radius: 10px;
     width: 60%;
     background-color: grey;
-    overflow: hidden;
 }
 
 .progress {
     height: 5px;
     width: 25%;
     background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.progress:hover{
-    background-color:yellowgreen;
-
+.progress:hover {
+    background-color: yellowgreen;
 }
 
-.ball{
-    width: 10px;
-    height:10px;
+.bar:hover .ball {
+    display: block;
+}
+
+.ball {
+    display: none;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: teal; 
+    background-color: white;
     position: absolute;
-    right:-10px; 
-    top:50%; 
-    bottom:50%; 
-    z-index:1; 
-    transform: translate(-50%,-50%);
-
+    right: -15px;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
 }
-
-
 
 .volume {
     height: 5px;
@@ -269,25 +264,23 @@ footer {
     width: 40%;
     background-color: grey;
     margin-right: 5px;
-    overflow: hidden;
+    cursor: pointer;
 }
 
-.state {
-    width: 20%;
+.volume:hover .ball {
+    display: block;
 }
 
-div.playlist:hover, nav .menu:hover, .top-menu span:hover {
+.playlist:hover, nav .menu:hover, .top-menu span:hover, .btn-play:hover {
     color: greenyellow;
     cursor: pointer;
 }
 
-footer i:hover{
+footer i:hover {
     transform: scale(1.2);
     color: white;
     cursor: pointer;
 }
-
-
 
 /** MEDIA QUERIES **/
 
@@ -316,6 +309,7 @@ footer i:hover{
     nav {
         align-items: flex-start;
         justify-content: flex-start;
+        width: 200px;
     }
     [alt="logo-small"] {
         display: none;
@@ -333,9 +327,7 @@ footer i:hover{
         color: white;
         width: 50%
     }
-    nav {
-        width: 200px;
-    }
+    
 }
 
 @media screen and (min-width:992px) {
@@ -355,3 +347,4 @@ footer i:hover{
         width: 200px;
     }
 }
+
