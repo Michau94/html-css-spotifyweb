@@ -51,6 +51,10 @@ body {
     flex-wrap: nowrap;
 }
 
+.f-shrink{
+    flex-shrink: 1;
+}
+
 /* PADDING */
 
 .p-10 {
@@ -74,9 +78,9 @@ body {
     height: 100%
 }
 
-.h-30 {
-    height: 30px;
-    width: 30px;
+.h-40 {
+    height: 40px;
+    width: 40px;
 }
 
 /* MARGIN */
@@ -155,6 +159,13 @@ nav img {
     height: 30px;
     margin: 5px;
     cursor: pointer
+}
+
+.separator{
+    width: 50%;
+    height: 1px;
+    background-color: yellowgreen;
+    margin: 0 auto;
 }
 
 main {
@@ -297,9 +308,12 @@ footer i:hover {
     .playlist-sec {
         display: none;
     }
-    body {
+    /* body {
         font-size: 1.2em;
-    }
+    } */
+
+    .separator {
+    display: none;}
 }
 
 @media screen and (min-width:576px) {
@@ -314,19 +328,14 @@ footer i:hover {
     [alt="logo-small"] {
         display: none;
     }
-    hr {
-        display: none;
-    }
+    
     nav .content {
         align-items: flex-start;
     }
     nav .content.flex-c {
         align-items: flex-start;
     }
-    hr {
-        color: white;
-        width: 50%
-    }
+
     
 }
 
