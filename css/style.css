@@ -64,6 +64,10 @@ body {
     margin-left: 10px;
 }
 
+.mtb-15 {
+    margin: 15px 0;
+}
+
 .pl-50 {
     padding-left: 50px;
 }
@@ -77,6 +81,8 @@ span {
 .br-50 {
     border-radius: 50%;
 }
+
+
 
 .rel {
     position: relative;
@@ -160,13 +166,18 @@ img {
     width: 25%;
     background-color: greenyellow;
     height: 2px;
+    margin: 0 auto;
+}
+.sec-title{
+    margin: 40px 0; 
 }
 
 .card {
     border: 5px solid transparent;
 }
-.card .description h3{
-    margin: 15px 0; 
+
+.card .description h3 {
+    margin: 15px 0;
 }
 
 .card .description h6 {
@@ -231,6 +242,27 @@ footer {
     background-color: white;
 }
 
+.progress:hover{
+    background-color:yellowgreen;
+
+}
+
+.ball{
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: teal; 
+    position: absolute;
+    right:-10px; 
+    top:50%; 
+    bottom:50%; 
+    z-index:1; 
+    transform: translate(-50%,-50%);
+
+}
+
+
+
 .volume {
     height: 5px;
     border-radius: 10px;
@@ -244,10 +276,18 @@ footer {
     width: 20%;
 }
 
-nav .menu:hover {
+div.playlist:hover, nav .menu:hover, .top-menu span:hover {
     color: greenyellow;
     cursor: pointer;
 }
+
+footer i:hover{
+    transform: scale(1.2);
+    color: white;
+    cursor: pointer;
+}
+
+
 
 /** MEDIA QUERIES **/
 
