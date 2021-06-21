@@ -24,6 +24,10 @@ body {
     border-left: yellowgreen 3px solid;
 }
 
+.bg-grey{
+    background-color: #B3B3B3;
+}
+
 /* TEXT */
 
 .cap {
@@ -41,6 +45,8 @@ body {
 .w-100 {
     width: 100%;
 }
+
+
 
 /* FLEX */
 
@@ -64,6 +70,10 @@ body {
 }
 
 /* PADDING */
+
+.p-5{
+    padding: 5px;
+}
 
 .p-10 {
     padding: 10px;
@@ -137,6 +147,8 @@ header {
     align-self: center;
     margin-right: 25px;
 }
+
+
 
 .btn-upgrade:hover {
     color: white;
