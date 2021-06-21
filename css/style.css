@@ -51,7 +51,7 @@ body {
     flex-wrap: nowrap;
 }
 
-.f-shrink{
+.f-shrink {
     flex-shrink: 1;
 }
 
@@ -61,9 +61,8 @@ body {
     padding: 10px;
 }
 
-.p-20
-{
-    padding:20px;
+.p-20 {
+    padding: 20px;
 }
 
 .pt-70 {
@@ -161,7 +160,7 @@ nav img {
     cursor: pointer
 }
 
-.separator{
+.separator {
     width: 50%;
     height: 1px;
     background-color: yellowgreen;
@@ -177,7 +176,7 @@ main {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .selected {
@@ -287,6 +286,17 @@ footer {
     cursor: pointer;
 }
 
+.playlist-sec{
+    min-height: 200px; 
+}
+
+.play-listing {
+    overflow-y: auto;
+    height: 30vh;
+    max-height: 50vh;  
+} 
+
+
 footer i:hover {
     transform: scale(1.2);
     color: white;
@@ -311,9 +321,9 @@ footer i:hover {
     /* body {
         font-size: 1.2em;
     } */
-
     .separator {
-    display: none;}
+        display: none;
+    }
 }
 
 @media screen and (min-width:576px) {
@@ -328,15 +338,17 @@ footer i:hover {
     [alt="logo-small"] {
         display: none;
     }
-    
     nav .content {
         align-items: flex-start;
     }
     nav .content.flex-c {
         align-items: flex-start;
     }
-
-    
+    .play-listing {
+        overflow-y: auto;
+        min-height: 30%;
+        max-height: 100%;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -346,6 +358,7 @@ footer i:hover {
     nav {
         width: 200px;
     }
+
 }
 
 @media screen and (min-width:1200px) {
@@ -356,4 +369,3 @@ footer i:hover {
         width: 200px;
     }
 }
-
