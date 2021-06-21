@@ -20,6 +20,10 @@ body {
     border-radius: 50%;
 }
 
+.selected-v{
+    border-left: yellowgreen 3px solid;
+}
+
 /* TEXT */
 
 .cap {
