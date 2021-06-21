@@ -140,12 +140,28 @@ header {
     z-index: 1;
 }
 
+[alt="logo-big"]{
+    animation: open 1s ease-in;
+}
+
+@keyframes open {
+    from {
+        position: relative;
+        left:-100px;
+    }
+    to{
+        position:relative;
+        left:0; 
+    }
+}
+
 .btn-upgrade {
     padding: 8px 15px;
     border: 1px white solid;
     border-radius: 15px;
     align-self: center;
     margin-right: 25px;
+    cursor: pointer;
     animation: subscribe 1s 5 alternate forwards ;
 }
 
