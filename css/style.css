@@ -206,8 +206,6 @@ header {
     animation-delay: .3s;
 }
 
-
-
 .instal, .separator {
     animation-delay: .5s;
 }
@@ -255,6 +253,21 @@ img {
     max-width: 100%;
 }
 
+.top-menu{
+    animation: updown 1s ease 1s backwards;
+}
+
+@keyframes updown {
+    from{
+        position: relative;
+        top: -120px;
+    }
+    to{
+        position: relative;
+        top:0; 
+    }
+    
+}
 .selected {
     width: 25%;
     background-color: greenyellow;
@@ -330,6 +343,16 @@ footer {
     left: 0;
     width: 100%;
     background-color: #212121;
+    animation: bottom .5s ease backwards;
+}
+
+@keyframes bottom {
+    from {
+        transform: scale(0.1);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 .song, .artist {
