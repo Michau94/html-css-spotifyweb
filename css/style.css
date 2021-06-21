@@ -146,8 +146,17 @@ header {
     border-radius: 15px;
     align-self: center;
     margin-right: 25px;
+    animation: subscribe 1s 5 alternate forwards ;
 }
 
+@keyframes subscribe{
+    from {
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
 
 
 .btn-upgrade:hover {
