@@ -184,7 +184,7 @@ header {
 }
 
 .home, .cerca, .libreria, .instal, .user, .playlist-sec {
-    animation: side 2s ease;
+    animation: side 1s ease backwards;
 }
 
 @keyframes side {
