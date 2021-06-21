@@ -141,7 +141,7 @@ header {
 }
 
 [alt="logo-big"]{
-    animation: open 1s ease-in;
+    animation: open .5s ease-in ;
 }
 
 @keyframes open {
@@ -184,6 +184,32 @@ header {
 
 [alt="logo-big"] {
     height: 50px;
+}
+
+.home, .cerca, .libreria{
+    animation: side 2s ease;
+}
+
+
+
+@keyframes side {
+    from{
+        position: relative;
+        left:-230px;
+    }
+    to{
+        position: relative;
+        left:0; 
+    }
+    
+}
+
+.cerca{
+    animation-delay: .2s;
+}
+
+.libreria{
+    animation-delay: .3s;
 }
 
 nav {
